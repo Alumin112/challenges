@@ -2,7 +2,6 @@ use std::io;
 
 mod challenge87;
 fn main() {
-    println!(":{}", 0 % 5);
     for input in input_i32() {
         println!("{}", challenge87::solve(input));
     }
