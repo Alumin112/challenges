@@ -7,13 +7,13 @@ fn main() {
     }
 }
 
-fn input_i32() -> Vec<i32> {
+fn input_i32() -> Vec<u64> {
     let mut input = String::new();
 
     io::stdin().read_line(&mut input)
         .expect("Failed to read line");
     
-    let inputs: i32 = input
+    let inputs: u64 = input
         .trim()
         .parse().unwrap();
 
@@ -24,7 +24,7 @@ fn input_i32() -> Vec<i32> {
             io::stdin().read_line(&mut input)
                 .expect("Failed to read line");
 
-            input.trim().parse::<i32>().unwrap()
+            input.trim().parse::<u64>().unwrap()
         })
-        .collect::<Vec<i32>>();
+        .collect::<Vec<u64>>();
 }
